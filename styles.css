@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "DM Sans", serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+p {
+    line-height: 25px;
+    font-size: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    background-color: white;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 12px 24px;
+}
+
+section {
+    display: flex;
+}
+
+.info-section {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 6%;
+}
+
+.info-section-dark {
+    background-color: black;
+    color: white;
+}
+
+.info-section-light {
+    background-color: white;
+    color: black;
+}
+
+
+.gradient-rectangle {
+    width: 6px;
+    height: 320px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient( #5A77FF, #BC7198, #FFC593);
+    position: absolute;
+    left: 0;
+}
+
+.info-section-text-container {
+    width: 400px;
+}
+
+.section1-img1, .section1-img2, .section1-img3, .right-image img  {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.section1-img1 {
+    background-image: url('Media/section1img.jpg');
+}
+
+.section1-img2 {
+    background-image: url('Media/section2img.jpg');
+}
+
+.section1-img3 {
+    background-image: url('Media/section3img.jpg');
+}
+
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-white a {
+    padding-left: 0;
+}
+
+.secondary-button {
+    display: flex;
+    align-items: center;
+    margin-top: 26px;
+}
+
+
+.secondary-button a {
+    padding-left: 0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.arrow {
+    padding-left: 18px;
+}
+
+.section4div {
+    flex: 1;
+    position: relative;
+    color: white; 
+    overflow: hidden;
+}
+
+.section4div a {
+    color: white;
+    padding-left: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.img-overlay {
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+}
+
+.overlay-text {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    bottom: 6%;
+    z-index: 1;
+}
+
+.section4img {
+    width: 100%;
+}
+
+hr {
+    width: 100%;
+}
+
+.text-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.section5img {
+    width: 20%;
+}
+
+.section5 h4 {
+    margin-top: 48px;
+}
+
+.section5 p, .info-section-light p {
+    color: grey;
+}
+
+footer {
+    background-color: black;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-div {
+    Height: 122px;
+}
+
+.footer-div1, .footer-div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-media {
+    display: flex;
+    gap: 14px;
+}
+
+footer a {
+    color: white;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footer-left {
+    display: flex;
+    gap: 100px;
+}
+
+.footer-button {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.copyright-text p {
+    color: gray;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .section4div {
+        flex: 50%; /* Each box takes half of the width */
+        margin: -4px;
+    }
+
+    .section4 {
+        flex-wrap: wrap; /* Allows the divs to wrap to a new line */
+    }
+
+    .section5 {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .flex-column {
+        width: 60%;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer-left {
+        position: relative;
+    }
+
+    .footer-div2 {
+        flex-direction: row;
+        position: absolute;
+        top: 46px;
+        gap: 30px;
+    }
+   
+  }
+
+  @media only screen and (max-width: 700px) {
+
+    section {
+        flex-direction: column;
+    }
+
+    .section4div {
+        flex: 100%; /* Each box takes half of the width */
+        margin: -4px;
+    }
+
+
+    .info-section {
+        width: 100%;
+        order: 2; /* Moves info section after image */
+    }
+
+    .section1-img1, .section1-img2, .section1-img3 {
+        height: 400px; /* Adjust as needed */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .section1-img1 {
+        order: 1; /* Moves image before info section */
+    }
+
+    footer, .footer-left, .footer-right {
+        flex-direction: column;
+    }
+
+    footer {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-right {
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .copyright-text {
+        margin-top: 50px;
+    }
+
+    .footer-left {
+        gap: 50px;
+    }
+
+    .img-overlay {
+        bottom: 0;
+    }
+
+    .gradient-rectangle {
+        width: 200px;
+        height: 6px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to right, #5A77FF, #BC7198, #FFC593);
+        position: absolute;
+        top: 0;
+        left: 136px;
+    }
+
+    .footer-div2 {
+        align-self: center;
+    }
+   
+  }
+
